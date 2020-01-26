@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 2 Team Activity</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    
+    <input id="input1" type="text">
+    <button id="button1" onclick="step1()">Button 1</button>
+    <div id="div1"></div>
+    
+    <input id="input2" type="text">
+    <button id="button2" onclick="step2()">Button 2</button>
+    <div id="div2"></div>
+    
+    <input id="input3a" type="text">
+    <div> + </div>
+    <input id="input3b" type="text">
+    <div> = </div>
+    <button id="button3" onclick="step3()">Button 3</button>
+    <div id="div3"></div>
+    
+    <input id="input4a" type="text">
+    <div> - </div>
+    <input id="input4b" type="text">
+    <div> = </div>
+    <button id="button4" onclick="subtract()">Button 4</button>
+    <div id="div4"></div>
+    
+    <input id="input5a" type="text">
+    <div> x </div>
+    <input id="input5b" type="text">
+    <div> = </div>
+    <button id="button5" onclick="subtract()">Button 5</button>
+    <div id="div5"></div>
+
+    <script>
+      function step1() {
+        const input = document.getElementById("input1").value;
+        const write = document.getElementById("div1");
+        write.innerHTML = input;
+      }
+      
+      function step2() {
+        const input = document.getElementById("input2").value;
+        const write = document.getElementById("div2");
+        let total = 0;
+        for (let i = 1; i <= input; i++) {
+          total += i;
+        }
+        write.innerHTML = total;
+      }
+      
+      function step3() {
+        const inputA = parseInt(document.getElementById("input3a").value);
+        const inputB = parseInt(document.getElementById("input3b").value);
+        const write = document.getElementById("div3");
+        write.innerHTML = inputA + inputB;
+      }
+      
+      let subtract = function() {
+        const inputA = parseInt(document.getElementById("input4a").value);
+        const inputB = parseInt(document.getElementById("input4b").value);
+        const write = document.getElementById("div4");
+        write.innerHTML = inputA - inputB;
+      }
+      
+      let multiply = ()=>{
+        const inputA = parseInt(document.getElementById("input5a").value);
+        const inputB = parseInt(document.getElementById("input5b").value);
+        const write = document.getElementById("div5");
+        write.innerHTML = inputA * inputB;
+      }
+      
+    </script>
+    
+  </body>
+</html>
