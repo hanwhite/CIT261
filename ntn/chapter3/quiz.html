@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>Quiz Ninja Chapter 2</title>
+    <header>
+        <h1>Quiz Ninja Chapter 2</h1>
+    </header>
+    <script>
+
+        const quiz = new Map([
+        ["What is Superman's real name?","Clark Kent"],
+            ["What is Wonderwoman's real name?","Dianna Prince"],
+            ["What is Batman's real name?","Bruce Wayne"]
+        ]);
+
+        // create & initialize score
+        let score = 0;
+        // loop
+        for(const [question,answer] of quiz.entries()){
+
+            // get answer
+            const response = prompt(question);
+            // check answer
+            if(response === answer){
+                alert('Correct!');
+                score++;
+            } else {
+                alert(`Wrong! The correct answer was ${answer}`);
+            }
+        }
+
+        // display score
+        alert(`Game Over, you scored ${score} point${score > 1 ? 's' : ''}`);
+
+    </script>
+</head>
+</html>
