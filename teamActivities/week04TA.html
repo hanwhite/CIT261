@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Week 4 Team Activity</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="board" id="board" onclick="play(event)">
+     <div class="box1"></div>
+     <div class="box2"></div>
+     <div class="box3"></div>
+     <div class="box4"></div>
+     <div class="box5"></div>
+     <div class="box6"></div>
+     <div class="box7"></div>
+     <div class="box8"></div>
+     <div class="box9"></div>
+    </div>
+    <button id="reset" onclick="reset()">Reset</button>
+    <style>
+      
+.board {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+}
+      
+.board div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 35px;
+}
+
+.box1, .box2, .box4, .box5 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.box3, .box6 {
+  height: 50px;
+  width: 50px;
+  border-bottom: 1px solid black;
+}
+
+.box7, .box8 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+}
+
+.box9 {
+  height: 50px;
+  width: 50px;
+}
+
+    </style>
+    <script>
+      
+      const playerX = 'X';
+      const playerO = 'O';
+      let player = playerX;
+      
+      function play(p) {
+        let place = p.target;
+        console.log(place.getAttribute("class"));
+        player = (player == playerX ? playerO : playerX);
+        place.innerHTML = player;
+      }
+      
+      function reset() {
+        const boardLength = document.getElementById("board").childNodes.length;
+        const board = document.getElementById("board").childNodes;
+        for (let i = 0; i < boardLength; i++) {
+          board[i].innerHTML = "";
+        }
+      }
+   
+    </script>
+  </body>
+</html>
