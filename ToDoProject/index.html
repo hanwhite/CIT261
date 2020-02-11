@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>ToDo List</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>ToDo List</h1>
+        <div id="todoList">
+            <div id="todoItem">
+                <input type="checkbox" value="done">
+                <p>Do Dishes</p>
+                <button id="removeButton">Remove</button>
+            </div>
+            <div id="todoItem">
+                <input type="checkbox" value="done">
+                <p>Grocery shopping</p>
+                <button id="removeButton">Remove</button>
+            </div>
+            <div id="todoItem">
+                <input type="checkbox" value="done">
+                <p>Fold Laundry</p>
+                <button id="removeButton">Remove</button>
+            </div>
+            <div id="todoItem">
+                <input type="checkbox" value="done">
+                <p>Sweep Floors</p>
+                <button id="removeButton">Remove</button>
+            </div>
+            <div id="todoItem">
+                <input type="checkbox" value="done">
+                <p>Make the bed</p>
+                <button id="removeButton">Remove</button>
+            </div>
+
+        </div>
+        <script src="main.js"></script>
+    </body>
+    <footer>
+        <div id="footerLabels">
+            <div id="footerTotal">
+                Total amount left here
+            </div>
+            <div id="footerFilters">
+                <button id="allTasksButton">All Tasks</button>
+                <button id="activeTasksButton">Active Tasks</button>
+                <button id="completedTasksButton">Completed Tasks</button>
+            </div>
+        </div>
+        <div id="addTaskForm">
+            <form>
+                <input id="addInput" type="text" name="newTask" placeholder="New Task">
+            </form>
+            <button id="plusSign">&#43;</button>
+        </div>
+    </footer>
+</html>

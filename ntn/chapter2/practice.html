@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <title>Quiz Ninja Chapter 2</title>
+    <header>
+        <h1>Quiz Ninja Chapter 2</h1>
+    </header>
+    <body>
+        <div>You said: </div>
+        <div id="display"></div>
+    </body>
+    <script>
+        const question = "Type something in here!"
+        const answer = prompt(question);
+        alert(`You said ${answer}`);
+        const write = document.getElementById("display");
+        write.innerHTML = answer;
+    </script>
+</head>
+</html>

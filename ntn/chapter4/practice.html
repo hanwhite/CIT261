@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice with Functions</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+        <div class="func">
+            <aside>display</aside>
+            <input id="input1" type="text">
+            <button id="button1" onclick="display()">Button 1</button>
+            <div id="div1"></div>
+        </div>
+        <div class="func">
+            <aside>get the sum</aside>
+            <input id="num" type="text">
+            <button id="button2" onclick="getSum()">Button 2</button>
+            <div id="div2"></div>
+        </div>
+    </div>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto  auto;
+        }
+        .func {
+            background-color:azure;
+            font-size: 15px;
+            text-align: left;
+            padding: 5px;
+        }
+      
+    </style>
+
+    <script>
+      function display() {
+        const input = document.getElementById("input1").value;
+        const write = document.getElementById("div1");
+        write.innerHTML = input;
+      }
+      
+      function getSum() {
+        const input = document.getElementById("num").value;
+        const write = document.getElementById("div2");
+        let total = 0;
+        for (let i = 1; i <= input; i++) {
+          total += i;
+        }
+        write.innerHTML = total;
+      }
+      
+    </script>
+    
+  </body>
+</html>

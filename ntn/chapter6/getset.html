@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Setting Variables</h2>
+
+<p id="practice"></p>
+
+<script>
+    
+var person = {
+    firstName: "Jane",
+    lastName: "Doe",
+    age: 25,
+    hairColor: "red",
+    set hColor(value) {
+        this.hairColor = value;
+    }
+};
+    
+person.hColor = "brown";
+document.getElementById("practice").innerHTML = 
+    person.firstName + " has " + person.hairColor + " hair.";
+    
+</script>
+
+</body>
+</html>
