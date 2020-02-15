@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head> 
         <title>ToDo List</title>
@@ -9,35 +9,10 @@
     </head>
     <body>
         <h1>ToDo List</h1>
-        <div id="todoList">
-            <div id="todoItem">
-                <input type="checkbox" value="done">
-                <p>Do Dishes</p>
-                <button id="removeButton">Remove</button>
-            </div>
-            <div id="todoItem">
-                <input type="checkbox" value="done">
-                <p>Grocery shopping</p>
-                <button id="removeButton">Remove</button>
-            </div>
-            <div id="todoItem">
-                <input type="checkbox" value="done">
-                <p>Fold Laundry</p>
-                <button id="removeButton">Remove</button>
-            </div>
-            <div id="todoItem">
-                <input type="checkbox" value="done">
-                <p>Sweep Floors</p>
-                <button id="removeButton">Remove</button>
-            </div>
-            <div id="todoItem">
-                <input type="checkbox" value="done">
-                <p>Make the bed</p>
-                <button id="removeButton">Remove</button>
-            </div>
-
-        </div>
-        <script src="main.js"></script>
+        <ul id="todoListElement">
+            
+        </ul>
+        <script type="module" src="main.js" ></script>
     </body>
     <footer>
         <div id="footerLabels">
@@ -51,10 +26,11 @@
             </div>
         </div>
         <div id="addTaskForm">
-            <form>
+            <form id="addTodoForm">
                 <input id="addInput" type="text" name="newTask" placeholder="New Task">
+                <button id="plusSign" type="submit">&#43;</button>
             </form>
-            <button id="plusSign">&#43;</button>
+
         </div>
     </footer>
 </html>

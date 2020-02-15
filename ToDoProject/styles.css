@@ -9,9 +9,17 @@ h1 {
     text-transform: uppercase;
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
 /************ TODO List ************/
-#todoList {
+#todoListElement {
     padding: 8px;
+    list-style-type: none;
 }
 
 #todoItem {
@@ -26,6 +34,7 @@ h1 {
     margin-bottom: 8px;
     border: 1px solid black;
     background-color: #E8E8E8;
+    
 }
 
 #todoItem button {
@@ -42,8 +51,10 @@ h1 {
     color: whitesmoke;
 }
 
+
+
 /************ New Item ************/
-#addTaskForm {
+#addTodoForm {
     width: 300px;
     margin: auto;
     height: 43px;
