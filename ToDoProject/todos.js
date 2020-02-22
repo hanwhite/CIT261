@@ -33,6 +33,7 @@ export default class Todos {
     constructor(elementId) {
         this.parent = document.getElementById(elementId);
         this.addTodoItem = this.addTodo();
+        this.type = elementId;
 
     }
     
@@ -40,6 +41,13 @@ export default class Todos {
         return todoList;
     }
     
+    readLS(type) {
+        return JSON.parse(window.localStorage.getItem(type));
+    }
+    
+    writeLS(type, input) {
+        window.localStorage.setItem(type, JSON.stringify(input));
+    }
     
     showList() {
         const listElement = document.getElementById("todoListElement");
@@ -68,8 +76,7 @@ export default class Todos {
             const input = document.getElementById("addInput");
 
             const content = input.value;
-           
-            this.renderTodo(content);
+           this.renderTodo(content);
            this.addRemoveListener(listElement);
            this.addCheckedListener(listElement);
            this.allTasks(listElement);
@@ -94,7 +101,7 @@ export default class Todos {
                 <p>${todoI.content}</p>
                 <button id="removeButton">Remove</button>
             </div> `
-        
+        this.writeLS(todoI);
         this.allTasks(listElement);
         this.completedTasks(listElement);
         this.activeTasks(listElement);
@@ -217,5 +224,5 @@ function showOneTodo(todo) {
         
         
         return item;
-    }
+}
     
