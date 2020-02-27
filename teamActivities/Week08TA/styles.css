@@ -1,0 +1,27 @@
+h2 {
+    text-align: center;
+    width: 25%;
+    margin: auto;
+}
+
+.container {
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    width: 25%;
+}
+
+.nameHeader {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.birthYear {
+    font-size: 12px;
+    color: gray;
+    align-content: center;
+}
+
