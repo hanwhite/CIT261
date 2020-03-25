@@ -1,0 +1,294 @@
+
+body {
+    background-color: #FFFEFE;
+}
+
+/********************LOGO*******************/
+
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-family: raleway;
+    color: #3d4e54;
+    
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-family: raleway;
+    color: #3d4e54;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+/********************NAVIGATION BAR*******************/
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    background-color: #e9c9bc;
+    border: 0.5px solid #3d4e54;
+}
+
+.navBarItem {
+    display: inline;
+    padding: 8px;
+    text-transform: uppercase;
+    font-family: raleway;
+    color: #3d4e54;
+}
+
+.navBarItem:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/*********ADOPTION PREVIEW***********/
+
+.adoptionPreview {
+    height: 400px;
+    width: 95%;
+    margin: auto;
+    padding: 8px;
+    margin-top: 70px;
+    background-color: #CB9274;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFEFE;
+}
+
+.adoptionTitle, .reviewsTitle {
+    height: 100%;
+    width: 43%;
+    margin-bottom: auto;
+    margin-top: auto;
+    line-height: 380px;
+    text-align: center;
+    color: #FFFEFE;
+    font-family: 'shadows into light';
+    font-size: 100px;
+}
+
+
+
+
+.adoptionSlides {
+    height: 100%;
+    width: 55%;
+    margin-bottom: auto;
+    margin-top: auto;
+    
+}
+
+.mySlides {
+    height: 350px;
+    width: auto;
+    max-width: 100%;
+    display: none;
+    text-align: right;
+    margin: auto;
+}
+
+/*********DONATIONS***********/
+
+.donationSection {
+    height: 400px;
+    width: 95%;
+    margin: auto;
+    padding: 8px;
+    margin-top: 70px;
+    background-color: #8c4f40;
+    color: #FFFEFE;
+    display: flex;
+    justify-content: space-between;
+}
+
+.donationTitle {
+    height: 30%;
+    width: 43%;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+    font-family: 'shadows into light';
+    font-size: 100px;
+    color: #fffefe;
+}
+
+.currentlyDonated {
+    height: 90%;
+    margin:auto;
+    width: 52%;
+    text-align: center;
+    line-height: 300px;
+    font-family: raleway;
+    background-color: #fffefe;
+    opacity: 70%;
+    color: #3d4e54;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#donationNumber {
+    font-family: 'shadows into light';
+    font-size: 80px;
+}
+
+
+#submitButton {
+    font-family: raleway;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+
+/*************REVIEWS****************/
+
+.reviewsPreview {
+    height: 400px;
+    width: 95%;
+    margin: auto;
+    padding: 8px;
+    margin-top: 70px;
+    background-color: #e9c9bc;
+    color: #FFFEFE;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewsSlides {
+    height: 100%;
+    width: 55%;
+    border: 1px solid #3d4e54;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#reviewListElement {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    list-style-type: none;
+    background-image:  url('../images/mediumDots.jpg');
+    background-position: center;
+    background-size:contain;
+    width: 85%;
+}
+
+#reviewItem {
+    display: flex;
+    padding: 8px;
+    text-align: center;
+    opacity: 80%;
+    text-transform: none;
+    font-family: raleway;
+    color: #3d4e54;
+    margin: 10px;
+    background-color: #fffefe;
+}
+
+#addReviewForm {
+    padding: 10px;
+    width: 85%;
+    font-family: raleway;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#addReviewForm textarea {
+    border: 0.5px solid #3d4e54;
+}
+
+#addReviewForm button {
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: #b0b6b3;
+    color: #fffefe;
+    margin-top: 10px;
+}
+
+
+
+/***************FOOTER************************/
+
+footer {
+    height: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #3d4e54;
+    color: #fffefe;
+}
+
+.contactInfo {
+    text-align: center;
+    padding-top: 10px; 
+    font-family: raleway;
+}
+
+/*************ABOUT PAGE*******************/
+
+.aboutSection {
+    text-align: center;
+    font-family: raleway;
+    color: #3d4e54;
+    margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fcf7f6;
+    
+}
+.aboutSection p {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+/****************Contact Page*************/
+
+
+.questionForm {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+
+.questionTextArea {
+    font-family: raleway;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
