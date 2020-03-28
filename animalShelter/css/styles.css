@@ -60,7 +60,7 @@ ul {
     margin: auto;
     padding: 8px;
     margin-top: 70px;
-    background-color: #CB9274;
+    border: 5px solid #CB9274;
     display: flex;
     justify-content: space-between;
 }
@@ -70,20 +70,17 @@ a {
     color: #FFFEFE;
 }
 
-.adoptionTitle, .reviewsTitle {
+.adoptionTitle {
     height: 100%;
     width: 43%;
     margin-bottom: auto;
     margin-top: auto;
     line-height: 380px;
     text-align: center;
-    color: #FFFEFE;
+    color: #CB9274;
     font-family: 'shadows into light';
     font-size: 100px;
 }
-
-
-
 
 .adoptionSlides {
     height: 100%;
@@ -102,6 +99,35 @@ a {
     margin: auto;
 }
 
+/*Adoptions page*/
+#dogListElement {
+    display: flex;
+    flex-direction: column;
+    font-family: raleway;
+    list-style: none;
+    background-color: #fffefe
+}
+
+#dogItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    padding: 8px;
+    border: 5px solid #3d4e54;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.dimage {
+    width: 50%;
+    
+}
+
+
 /*********DONATIONS***********/
 
 .donationSection {
@@ -110,7 +136,7 @@ a {
     margin: auto;
     padding: 8px;
     margin-top: 70px;
-    background-color: #8c4f40;
+    border: 5px solid #8c4f40;
     color: #FFFEFE;
     display: flex;
     justify-content: space-between;
@@ -124,7 +150,7 @@ a {
     text-align: center;
     font-family: 'shadows into light';
     font-size: 100px;
-    color: #fffefe;
+    color: #8c4f40;
 }
 
 .currentlyDonated {
@@ -134,9 +160,9 @@ a {
     text-align: center;
     line-height: 300px;
     font-family: raleway;
-    background-color: #fffefe;
+    background-color: #8c4f40;
     opacity: 70%;
-    color: #3d4e54;
+    color: #FFFEFE;
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -147,7 +173,7 @@ a {
 }
 
 
-#submitButton {
+.donationSection #submitButton {
     font-family: raleway;
     padding: 8px;
     margin-top: 5px;
@@ -162,18 +188,10 @@ a {
     margin: auto;
     padding: 8px;
     margin-top: 70px;
-    background-color: #e9c9bc;
+    border: 5px solid #e9c9bc;
     color: #FFFEFE;
     display: flex;
     justify-content: space-between;
-}
-
-.reviewsSlides {
-    height: 100%;
-    width: 55%;
-    border: 1px solid #3d4e54;
-    margin-bottom: auto;
-    margin-top: auto;
 }
 
 #reviewListElement {
@@ -221,7 +239,17 @@ a {
     margin-top: 10px;
 }
 
-
+.reviewsTitle {
+    height: 100%;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    line-height: 380px;
+    text-align: center;
+    color: #CB9274;
+    font-family: 'shadows into light';
+    font-size: 100px;
+}
 
 /***************FOOTER************************/
 
@@ -261,20 +289,21 @@ footer {
 
 /****************Contact Page*************/
 
+.donateForm {
+    font-family: raleway;
+}
 
-.questionForm {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    margin: auto;
-    margin-top: 80px;
+.donateForm label, .donateForm input{
+    padding: 3px;
+    margin-top: 10px;
 }
 
 
-.questionTextArea {
+#submit {
     font-family: raleway;
-    background-color: red;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #3d4e54;
 }
 
 
