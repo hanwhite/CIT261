@@ -298,7 +298,6 @@ footer {
     margin-top: 10px;
 }
 
-
 #submit {
     font-family: raleway;
     padding: 10px;
@@ -306,9 +305,47 @@ footer {
     background-color: #3d4e54;
 }
 
+.questionForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    margin: auto;
+    padding: 8px;
+}
 
+.questionForm button {
+    font-family: raleway;
+    color: black;
+}
+/************Responsiveness**********/
 
-
+@media screen and (max-width: 650px) {
+    .adoptionPreview img{
+       display: none;
+        visibility: hidden;
+    }
+    .adoptionTitle {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        margin-left: 50px;
+    }
+    .donationTitle {
+        font-size: 70px;
+    }
+    #donationNumber {
+        font-family: raleway;
+        line-height: 50px;
+        font-size: 50px;
+    }
+    .currentlyDonated {
+        line-height: 80px;
+    }
+    
+    .reviewsTitle {
+        font-size: 50px;
+    }
+}
 
 
 
